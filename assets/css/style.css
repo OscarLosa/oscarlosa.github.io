@@ -107,3 +107,22 @@ hr.sep{border:none; border-top:1px solid var(--line); margin:14px 0}
 .list-center li{
   margin: 10px 0;
 }
+
+/* Profile card alignment */
+.profile-card{
+  text-align: center;
+}
+
+/* Mobile layout: show profile image first */
+@media (max-width: 860px){
+
+  .grid{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .profile-card{
+    order: -1; /* moves profile block to top */
+  }
+
+}
